@@ -31,7 +31,7 @@
   (GET "/metrics/last" []
     (controller/metrics-last))
       
-  (POST "/metrics" [humidity]
+  (POST "/metrics/insert" [humidity]
     (controller/metrics-insert humidity))
 
   (GET "/metrics/:year" [year :<< as-int]
